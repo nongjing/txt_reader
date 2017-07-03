@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:pageview="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/reading_activity_root"
+    android:orientation="vertical">
+    <Page.PageView
+        android:id="@+id/reading_activity_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       />
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/read_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:visibility="invisible"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:id="@+id/read_meau"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentStart="true"
+    android:orientation="horizontal"
+    android:visibility="invisible"
+    >
+    <Button android:layout_height="match_parent" android:layout_width="0dp"
+        android:layout_weight="1" android:id="@+id/Chapter_list" android:text="@string/目录"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/set_view"
+        android:text="@string/显示"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/pre_Chapter"
+        android:text="@string/上一章"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/next_Chapter"
+        android:text="@string/下一章"/>
+</LinearLayout>
+    <LinearLayout android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/set_view_meau"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/textsize_decrease"
+            android:text="@string/decrease"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/textsize_increase"
+            android:text="@string/increase"
+            />
+    </LinearLayout>
+</RelativeLayout>

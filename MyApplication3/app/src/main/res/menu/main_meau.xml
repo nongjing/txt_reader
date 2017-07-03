@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="@string/add"
+        android:id="@+id/main_menu_add"
+        app:showAsAction="never"/>
+    <item
+        android:title="@string/book_management"
+        android:id="@+id/main_menu_management"
+        app:showAsAction="never"/>
+    <item
+        android:title="@string/delete_all"
+        android:id="@+id/main_menu_delete_all"
+        app:showAsAction="never"/>
+    <item
+        android:title="确认"
+        android:id="@+id/main_meau_yes_delete"
+        app:showAsAction="always"/>
+    <item
+        android:title="取消"
+        android:id="@+id/main_meau_no_delete"
+        app:showAsAction="always"/>
+</menu>
